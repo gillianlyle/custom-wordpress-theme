@@ -1,0 +1,128 @@
+/*
+Theme Name: Custom Theme
+Author: Gillian Lyle
+Description: First attempt at a custom wordpress theme
+Version: 0.0.1
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Open+Sans&display=swap");
+/* variables */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: #1a1a1d;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #e0094d;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #303538;
+  padding: 40px;
+}
+header h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+header h1 a:focus, header h1 a:hover {
+  outline: none;
+  color: #e0094d;
+}
+header p {
+  color: #fff;
+}
+
+nav {
+  background: #222;
+  padding: 15px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  height: 25px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+}
+nav ul li a:focus, nav ul li a:hover {
+  outline: none;
+  background-color: #e0094d;
+}
+nav ul li:hover, nav ul li:focus {
+  background-color: #e0094d;
+}
+
+main {
+  margin: 20px auto;
+  width: 70%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.posts article {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 0px #ddd;
+  width: 45%;
+}
+
+footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    width: 90%;
+  }
+
+  main.posts article {
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main {
+    width: 90%;
+  }
+
+  main.posts article {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
