@@ -18,3 +18,8 @@
         <h1>
         <p><?php bloginfo('description'); ?></p>
     </header>  
+    <nav>
+        <ul>
+            <?php wp_list_pages( '&title_li=' ); ?> 
+        </ul>
+    </nav>
